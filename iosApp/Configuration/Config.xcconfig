@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=App_Defectos_Cacao
+PRODUCT_BUNDLE_IDENTIFIER=com.stevenandre.projects.App_Defectos_Cacao$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
