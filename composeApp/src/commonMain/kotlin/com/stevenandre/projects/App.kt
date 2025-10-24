@@ -23,12 +23,12 @@ import com.stevenandre.projects.ui.home.CacaoDefectsHome
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
-        CacaoDefectsHome(
-            onLiveAnalysis = { /* TODO: navega a cámara en vivo */ },
-            onUploadImage = { /* TODO: abre selector de archivo/galería */ },
-            onBrowseSamples = { /* TODO: navega a galería de muestras */ }
-        )
+    CacaoAITheme{
+            CacaoDefectsHome(
+                onLiveAnalysis = { /* TODO: navega a cámara en vivo */ },
+                onUploadImage = { /* TODO: abre selector de archivo/galería */ },
+                onBrowseSamples = { /* TODO: navega a galería de muestras */ }
+            )
         }
 
 }
