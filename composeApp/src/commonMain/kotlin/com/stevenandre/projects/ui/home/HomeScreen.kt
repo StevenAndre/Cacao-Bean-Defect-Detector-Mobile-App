@@ -32,7 +32,9 @@ import org.jetbrains.compose.resources.painterResource
 
 @Composable
 fun HomeScreen(
-    viewModel: HomeViewModel = viewModel()
+    viewModel: HomeViewModel,
+    onScanClick : ()->Unit,
+    onHistoryClick : ()->Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val scope = rememberCoroutineScope()
@@ -93,9 +95,9 @@ fun HomeScreen(
                 onItemClick = { item ->
                     when (item.icon) {
                         MenuIcon.CAMERA -> {
-                            cameraLauncher.launch(
+                            onScanClick()
 
-                            )
+                            print("Menu Cmaera Open")
                         }
                         else -> viewModel.onMenuItemClick(item)
                     }

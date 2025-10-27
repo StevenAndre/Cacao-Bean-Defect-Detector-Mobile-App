@@ -29,7 +29,19 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
-        }
+            implementation("com.google.guava:guava:31.1-android")
+            // CameraX core library
+            implementation(libs.androidx.camera.core)
+            // CameraX Camera2 extensions
+            implementation(libs.androidx.camera.camera2)
+            // CameraX Lifecycle library
+            implementation(libs.androidx.camera.lifecycle)
+            // CameraX View class
+            implementation(libs.androidx.camera.view)
+
+            implementation("androidx.navigation:navigation-compose:2.8.4")
+            implementation("androidx.activity:activity-compose:1.9.3")
+            }
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -42,6 +54,11 @@ kotlin {
 
             implementation("io.github.onseok:peekaboo-ui:0.5.2")
             implementation("io.github.onseok:peekaboo-image-picker:0.5.2")
+
+            implementation("org.jetbrains.androidx.navigation:navigation-compose:2.9.1")
+            // For shared ViewModels
+            implementation("org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose:2.8.2")
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
