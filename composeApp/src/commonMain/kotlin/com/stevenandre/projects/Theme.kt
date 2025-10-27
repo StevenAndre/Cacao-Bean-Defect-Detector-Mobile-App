@@ -7,11 +7,15 @@ import androidx.compose.ui.graphics.Color
 
 
 object CacaoColors {
-    val Brown900 = Color(0xFF3D2817)
-    val Brown700 = Color(0xFF5C4033)
-    val Brown500 = Color(0xFF8B6F47)
-    val Beige = Color(0xFFF5E6D3)
+
+
+    val Brown900 = Color( 145, 77, 74)
+    val Brown700 = Color(145, 70, 70)
+    val Brown500 = Color(120, 70, 70)
+    val Beige = Color(255, 252, 252)
     val GreenLight = Color(0xFFB4D4A1)
+
+    val Green = Color(30, 89, 46)
     val GreenDark = Color(0xFF7A9B6C)
 }
 

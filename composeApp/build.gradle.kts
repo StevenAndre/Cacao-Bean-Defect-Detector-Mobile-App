@@ -39,6 +39,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+            implementation("io.github.onseok:peekaboo-ui:0.5.2")
+            implementation("io.github.onseok:peekaboo-image-picker:0.5.2")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

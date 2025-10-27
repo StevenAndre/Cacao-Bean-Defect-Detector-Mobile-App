@@ -18,17 +18,14 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import app_defectos_cacao.composeapp.generated.resources.Res
 import app_defectos_cacao.composeapp.generated.resources.compose_multiplatform
-import com.stevenandre.projects.ui.home.CacaoDefectsHome
+import com.stevenandre.projects.ui.home.HomeScreen
+
 
 @Composable
 @Preview
 fun App() {
     CacaoAITheme{
-            CacaoDefectsHome(
-                onLiveAnalysis = { /* TODO: navega a cámara en vivo */ },
-                onUploadImage = { /* TODO: abre selector de archivo/galería */ },
-                onBrowseSamples = { /* TODO: navega a galería de muestras */ }
-            )
+        HomeScreen()
         }
 
 }
